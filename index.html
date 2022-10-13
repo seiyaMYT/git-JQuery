@@ -83,8 +83,10 @@
         $(this).toggleClass('active');
         if($(this).hasClass('active')){
           $(this).text("もう一度占う！");
+          $(".result").css("display","block");
         } else {
-          $(this).text("運勢を占う");
+          $(".result").css("display","none");
+          $(this).text("運勢を占う！");
         };
       });
     </script>
